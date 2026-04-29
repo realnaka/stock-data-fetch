@@ -98,9 +98,5 @@ Snapshot writes JSON to `wiki/raw/snapshots/{date}-{TICKER}.json`:
 ```
 
 ## Pitfalls
-- Don't use `pip install yfinance` — it's unreliable here
-- Don't try Google News RSS — guaranteed timeout
-- Binance returns HTTP 451 in this region, don't retry
 - Sina requires `Referer: https://finance.sina.com.cn` header
-- FMP key is expired — don't attempt FMP API calls
 - The `snapshot` CLI is in `~/trading-agent/` repo, install via `pip install -e ~/trading-agent`

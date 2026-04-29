@@ -119,22 +119,18 @@ The agent will automatically discover and use the data sources documented in the
 
 ---
 
-## 🌍 Network Resilience
+## 🌍 Verified Data Sources
 
-We operate behind the Great Firewall and in restricted corporate networks. Every source has been verified:
+Every source has been tested in production behind restricted networks:
 
-| Source | Status | Notes |
+| Source | Market | Notes |
 |--------|--------|-------|
-| Tencent qt | ✅ | Most reliable for China markets |
-| Sina Finance | ✅ | Requires Referer header |
-| Finnhub | ✅ | US stocks primary |
-| OKX | ✅ | Crypto primary (Binance 451 blocked) |
-| Hyperliquid | ✅ | 7×24 perp prices, 230+ coins |
-| Marketaux | ✅ | News with entity linking |
-| yfinance | ❌ | Unreliable — rate limited |
-| akshare | ❌ | eastmoney.com blocked |
-| Google News | ❌ | Timeout in restricted networks |
-| Binance | ❌ | HTTP 451 in some regions |
+| Finnhub | US Stocks | Quote + Fundamentals + Earnings |
+| Tencent qt | China A / HK | Free, no key required |
+| Sina Finance | China A / HK | Fallback, requires Referer |
+| OKX | Crypto | Primary, 200+ pairs |
+| Hyperliquid | Crypto + Commodities | 7×24 perp prices, no key |
+| Marketaux | News | Entity-linked, sentiment-tagged |
 
 ---
 
